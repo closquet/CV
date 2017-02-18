@@ -15,7 +15,7 @@
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
     </head>
-    <body itemscope itemtype="http://schema.org/Person">
+    <body itemscope itemtype="http://schema.org/Person" id="hcard-Eric-Closquet" class="vcard">
         <header role="banner" class="content">
             <div class="left">
                 <h1 role="heading" aria-level="1">
@@ -71,7 +71,7 @@
             </ul>
             <article>
                 <h2 role="heading" aria-level="2" aria-hidden="true" class="hidden">
-                    Mon CV <span itemprop="name">Eric Closquet</span>
+                    Mon CV <span itemprop="name" class="fn">Eric Closquet</span>
                 </h2>
                 <section id="presentation" aria-labelledby="presentationheading">
                     <div>
@@ -94,7 +94,7 @@
 
                                 <div class="oFlow">
                                     <ul class="sContent">
-                                        <li><img width="390" height="286" src="./assets/images/e1.jpg" alt="première photo portrait de Eric Closquet" itemprop="image"></li><!--
+                                        <li><img width="390" height="286" src="./assets/images/e1.jpg" alt="première photo portrait de Eric Closquet" itemprop="image" class="photo"></li><!--
                                         --><li><img width="390" height="286" src="./assets/images/e2.jpg" alt="deuxième photo portrait de Eric Closquet"></li><!--
                                         --><li><img width="390" height="286" src="./assets/images/e3.jpg" alt="troisième photo portrait de Eric Closquet"></li>
                                     </ul>
@@ -113,45 +113,21 @@
                             </div> <!-- #demoWrap -->
                         </div> <!-- #slideshow -->
 
-                        <div id="slideshow-js" class="img1" hidden>
-                            <span class="next next1">Next</span> <!-- Pour la 1ère étape -->
-                            <span class="prev prev2">Prev</span><span class="next next2">Next</span> <!-- Pour la 2ème étape -->
-                            <span class="prev prev3">Prev</span> <!-- Pour la 3ème étape -->
-                            <div class="oFlow">
-                                <ul class="sContent">
-                                    <li><img width="390" height="286" src="./assets/images/e1.jpg" alt="Une première photo portrait de Eric Closquet"></li><!--
-                                    --><li><img width="390" height="286" src="./assets/images/e2.jpg" alt="deuxième photo portrait de Eric Closquet"></li><!--
-                                    --><li><img width="390" height="286" src="./assets/images/e3.jpg" alt="troisième photo portrait de Eric Closquet"></li>
-                                </ul>
-                            </div>
-                            <ul class="bulletNav">
-                                <li>
-                                    <span class="bulletBtn" title="aller sur image personnelle numéro 1">1</span>
-                                </li>
-                                <li>
-                                    <span class="bulletBtn" title="aller sur image personnelle numéro 2">2</span>
-                                </li>
-                                <li>
-                                    <span class="bulletBtn" title="aller sur image personnelle numéro 3">3</span>
-                                </li>
-                            </ul>
-                        </div> <!-- #slideshow-js -->
-
                         <div id="contactMe">
                             <p id="contract">CDI ou CDD&nbsp;?</p>
                             <p><a href="#" title="afficher une carte afin de mieux localiser mon adresse">Devis de projet Web&nbsp;?</a></p>
-                            <p><span itemprop="email" class="hidden">eric.closquet@example.com</span><a href="mailto:eric.closquet@example.com?subject=feedback" title="ouvrir votre application mail et me contacter" class="redButton ico">CONTACTER</a></p>
+                            <p><span itemprop="email" class="hidden">eric.closquet@example.com</span><a href="mailto:eric.closquet@example.com?subject=feedback" title="ouvrir votre application mail et me contacter" class="redButton ico email">CONTACTER</a></p>
                             <ul>
                                 <li class="ico"><time itemprop="birthDate" datetime="1985-05-15">15/05/1985</time></li>
-                                <li class="ico" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="streetAddress">Rue Hachtéhemel 42 <span class="li" >3000 Séhècesse</span ></span></li>
+                                <li class="ico adr" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="streetAddress"><span class="street-address">Rue Hachtéhemel 42 </span><span class="li locality" >3000 Séhècesse</span ></span></li>
 
                                 <li class="ico">
-                                    <a href="https://www.google.be/maps/place/HEPL+-+Haute+Ecole+de+la+Province+de+Li%C3%A8ge/@50.6283075,5.516929,13z/data=!4m8!1m2!2m1!1sinpress+hepl!3m4!1s0x47c0f913260c08e5:0x4f2ac72c2556af90!8m2!3d50.6108724!4d5.51011">Localiser le bien sur une carte</a>
+                                    <a href="https://www.google.be/maps/place/HEPL+-+Haute+Ecole+de+la+Province+de+Li%C3%A8ge/@50.6283075,5.516929,13z/data=!4m8!1m2!2m1!1sinpress+hepl!3m4!1s0x47c0f913260c08e5:0x4f2ac72c2556af90!8m2!3d50.6108724!4d5.51011">Localiser moi sur une carte</a>
                                 </li>
                             </ul>
                             <ul>
                                 <li class="ico">Permis B</li>
-                                <li itemprop="telephone" class="ico">+32 (0) 498 22 33 44</li>
+                                <li itemprop="telephone" class="ico tel">+32 (0) 498 22 33 44</li>
                                 <li><a href="#" title="Performance énergétique du bien">PEB</a></li>
                             </ul>
                         </div> <!-- #contactMe -->
