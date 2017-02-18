@@ -107,7 +107,7 @@ table {
 /* general */
 /***********/
 body{
-    background: url('../img/bg.png') repeat-x 0 0 $bgColor;
+    background: url('../images/bg.png') repeat-x 0 0 $bgColor;
     font: .875em/1.4'open_sansregular', Arial, sans-serif; /* 16px fsz*/
     color: $defaultTextColor;
     display: flex;
@@ -151,7 +151,7 @@ a{
     position: relative;
     &:before{
         content: "";
-        background-image: url(../img/sprite.png);
+        background-image: url(../images/sprite.png);
         background-position: -32px -190px;
         background-repeat: no-repeat;
         display: block;
@@ -180,7 +180,7 @@ header{
         text-indent: -9999px;
         width: 80%;
         height: 34px;
-        background-image: url(../img/immovlan.svg);
+        background-image: url(../images/immovlan.svg);
         background-repeat: no-repeat;
     }
     .violetButton{
@@ -202,7 +202,7 @@ header{
     display: inline-block;
     width: 9px;
     height: 8px;
-    background-image: url(../img/sprite.png);
+    background-image: url(../images/sprite.png);
     background-repeat: no-repeat;
     background-position: 0 -170px;
     margin-left: 5px;
@@ -246,7 +246,7 @@ header{
     position: relative;
     &:after {
         content: "";
-        background-image: url(../img/sprite.png);
+        background-image: url(../images/sprite.png);
         background-position: -32px -190px;
         background-repeat: no-repeat;
         display: block;
@@ -382,7 +382,7 @@ main section:first-of-type h3{
     top: 6px;
 }
 #contactMe ul + ul a{
-    background-image: url(../img/sprite.png);
+    background-image: url(../images/sprite.png);
     text-indent: -9999px;
     width: 45px;
     height: 19px;
@@ -425,7 +425,7 @@ main section:first-of-type h3{
     display: block;
     width: 120px;
     height: 32px;
-    background: #2f2f61 url(../img/topimmo.jpg) 0 0 no-repeat;
+    background: #2f2f61 url(../images/topimmo.jpg) 0 0 no-repeat;
     background-size: 100%;
     margin: 0.71428571428571428571428571428571em 0; /* 10px/14px */
 }
@@ -450,7 +450,7 @@ main section:first-of-type h3{
     display: inline-block;
     height: 18px;
     width: 18px;
-    background-image: url(../img/sprite.png);
+    background-image: url(../images/sprite.png);
 }
 #tools li:nth-child(1) a{
     background-position: -279px -140px;
@@ -580,7 +580,7 @@ tr:last-of-type td, tr:last-of-type th {
 }
 #newsLetter button:after{
     content: "";
-    background-image: url(../img/sprite.png);
+    background-image: url(../images/sprite.png);
     background-position: -33px -328px;
     background-repeat: no-repeat;
     display: block;
