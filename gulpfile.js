@@ -94,4 +94,4 @@ gulp.task( "watch", [ "browserSync" ], function () {
 // --- Task for alias
 
 gulp.task( "default" , [ "images", "css", "js" ]);
-gulp.task( "work" , [ "default", "watch" ]);
+gulp.task( "work" , [ "watch" ]);
