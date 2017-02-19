@@ -86,7 +86,7 @@ gulp.task( "watch", [ "browserSync" ], function () {
     gulp.watch( src.scss, [ "css" ] );
     gulp.watch( src.js, [ "js" ] );
 
-    // gulp.watch( dest.html + "/**/*.html", browserSync.reload );
+    gulp.watch( "index.html", browserSync.reload );
     gulp.watch( dest.css + "/**/*.css", browserSync.reload );
     gulp.watch( dest.js + "/**/*.js", browserSync.reload );
 } );
