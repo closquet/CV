@@ -108,11 +108,11 @@ table {
 /***********/
 body{
     background: url('../images/bg.png') repeat-x 0 0 $bgColor;
-    font: .875em/1.4'open_sansregular', Arial, sans-serif; /* 16px fsz*/
+    font: .875em/1.4'open_sansregular', Arial, sans-serif; /* 14px fsz*/
     color: $defaultTextColor;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
 }
 .content{
     width: 980px; /*980px*/
@@ -168,6 +168,12 @@ p{
     word-wrap: break-word;
     hyphens: auto;
 }
+h3{
+    font-size: 1.563em;
+}
+h2{
+    font-size: 1.953em;
+}
 
 /**********/
 /* header */
@@ -180,6 +186,9 @@ header{
     justify-content: space-between;
     li{
         display: inline-block;
+    }
+    h1{
+        font-size: 2.441em;
     }
     h1 a{
         display: block;
@@ -287,7 +296,7 @@ article{
     }
 }
 main section:first-of-type h3{
-    font-size: 1.5em; /* 21px */
+    font-size: 1.563em;
     color: $defaultTextColor;
     line-height: 1.3;
 }
@@ -299,7 +308,7 @@ main section:first-of-type h3{
     margin: 0.71428571428571428571428571428571em 2.1428571428571428571428571428571em 0; /* 10px/14px 30px/14px */
 }
 #contract{
-    font-size: 1.5em; /* 21px */
+    font-size: 1.563em; /* 21px */
     font-family: "open_sansbold";
     color: $defaultBtnHoverBgColor;
 }
@@ -393,10 +402,11 @@ main section:first-of-type h3{
 }
 #advert h4{
         color: $contentHeading;
+        font-size: 1.25em;
 }
 #advert p:nth-of-type(1){
     color: $defaultBtnHoverBgColor;
-    font-size: 1.3em;
+    font-size: 1.25em;
 }
 #topimmoLogo{
     text-indent: -9999px;
@@ -446,7 +456,6 @@ main section:first-of-type h3{
     width: 60.204081632653061224489795918367%; /* 590px/980px */
 }
 #descriptionHeading{
-    font-size: 1.75em; /* 24.5px/14px */
     color: $contentHeading;
     margin: 0.2857142857142857em 0 1.428571428571429em; /* 4px/14px 20px/14px*/
 }
@@ -466,7 +475,7 @@ table{
 }
 caption{
     font-family: "open_sanssemibold";
-    font-size: 1.142857142857143em; /* 16px/14px */
+    font-size: 1.25em; /* 16px/14px */
     text-align: left;
 }
 th, td{
@@ -491,7 +500,7 @@ tr:last-of-type td, tr:last-of-type th {
 }
 .parPro p {
     font-family: "open_sanssemibold";
-    font-size: 1.142857142857143em; /* 16px/14px */
+    font-size: 1.25em; /* 16px/14px */
     margin-bottom: 0.71428571428571428571428571428571em; /* 10px/14px */
 }
 .parPro li{
@@ -526,13 +535,12 @@ tr:last-of-type td, tr:last-of-type th {
 }
 #newsLetter h2 {
     font-family: "open_sanssemibold";
-    font-size: 1.3em; /* 18.2px/14px */
+    font-size: 1.563em; /* 18.2px/14px */
 }
 #newsLetter label{
     display: block;
 }
 #newsLetter input{
-    font-size: 1.1em; /* 15.4px/14px */
     width: 236px;
     height: 29px;
     line-height: 1.883116883116883em; /* 29px/15.4px */
@@ -628,7 +636,7 @@ footer li + li:before{
     right: 2px;
     line-height: 2.2em;
     display: block;
-    font-size: 1.3em;
+    font-size: 1.25em;
 }
 .next:before{
     content: "►";
