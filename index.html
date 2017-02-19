@@ -15,11 +15,11 @@
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
     </head>
-    <body itemscope itemtype="http://schema.org/Person">
+    <body>
         <header role="banner" class="content">
             <div class="left">
                 <h1 role="heading" aria-level="1">
-                    <a href="#" title="aller sur la page d'accueil" itemprop="url">Eric-Closquet.be/</a>
+                    <a href="#" title="aller sur la page d&rsquo;accueil">Eric-Closquet.be/</a>
                 </h1>
                 <nav role="navigation" class="mainNav">
                     <h2 role="heading" aria-level="2" class="hidden">Menu de navigation principal</h2>
@@ -67,11 +67,11 @@
         <main role="main">
             <ul id="refAnnonce">
                 <li>Code Immovlan&nbsp;: <span>ERCL0585 </span> Référence&nbsp;: <span>10102016</span></li>
-                <li><a class="violetButton right" href="#" title="visualiser une liste de biens similaires">Afficher d'autres biens similaires</a></li>
+                <li><a class="violetButton right" href="#" title="visualiser une liste de biens similaires">Afficher d&rsquo;autres biens similaires</a></li>
             </ul>
-            <article>
+            <article itemscope itemtype="http://schema.org/Person" class="vcard">
                 <h2 role="heading" aria-level="2" aria-hidden="true" class="hidden">
-                    Mon CV <span itemprop="name">Eric Closquet</span>
+                    Mon CV <span itemprop="name" class="fn">Eric Closquet</span>
                 </h2>
                 <section id="presentation" aria-labelledby="presentationheading">
                     <div>
@@ -94,7 +94,7 @@
 
                                 <div class="oFlow">
                                     <ul class="sContent">
-                                        <li><img width="390" height="286" src="./assets/images/e1.jpg" alt="première photo portrait de Eric Closquet" itemprop="image"></li><!--
+                                        <li><img width="390" height="286" src="./assets/images/e1.jpg" alt="première photo portrait de Eric Closquet" itemprop="image" class="photo"></li><!--
                                         --><li><img width="390" height="286" src="./assets/images/e2.jpg" alt="deuxième photo portrait de Eric Closquet"></li><!--
                                         --><li><img width="390" height="286" src="./assets/images/e3.jpg" alt="troisième photo portrait de Eric Closquet"></li>
                                     </ul>
@@ -113,50 +113,26 @@
                             </div> <!-- #demoWrap -->
                         </div> <!-- #slideshow -->
 
-                        <div id="slideshow-js" class="img1" hidden>
-                            <span class="next next1">Next</span> <!-- Pour la 1ère étape -->
-                            <span class="prev prev2">Prev</span><span class="next next2">Next</span> <!-- Pour la 2ème étape -->
-                            <span class="prev prev3">Prev</span> <!-- Pour la 3ème étape -->
-                            <div class="oFlow">
-                                <ul class="sContent">
-                                    <li><img width="390" height="286" src="./assets/images/e1.jpg" alt="Une première photo portrait de Eric Closquet"></li><!--
-                                    --><li><img width="390" height="286" src="./assets/images/e2.jpg" alt="deuxième photo portrait de Eric Closquet"></li><!--
-                                    --><li><img width="390" height="286" src="./assets/images/e3.jpg" alt="troisième photo portrait de Eric Closquet"></li>
-                                </ul>
-                            </div>
-                            <ul class="bulletNav">
-                                <li>
-                                    <span class="bulletBtn" title="aller sur image personnelle numéro 1">1</span>
-                                </li>
-                                <li>
-                                    <span class="bulletBtn" title="aller sur image personnelle numéro 2">2</span>
-                                </li>
-                                <li>
-                                    <span class="bulletBtn" title="aller sur image personnelle numéro 3">3</span>
-                                </li>
-                            </ul>
-                        </div> <!-- #slideshow-js -->
-
                         <div id="contactMe">
                             <p id="contract">CDI ou CDD&nbsp;?</p>
                             <p><a href="#" title="afficher une carte afin de mieux localiser mon adresse">Devis de projet Web&nbsp;?</a></p>
-                            <p><span itemprop="email" class="hidden">eric.closquet@example.com</span><a href="mailto:eric.closquet@example.com?subject=feedback" title="ouvrir votre application mail et me contacter" class="redButton ico">CONTACTER</a></p>
+                            <p><span itemprop="email" class="hidden">eric.closquet@example.com</span><a href="mailto:eric.closquet@example.com?subject=feedback" title="ouvrir votre application mail et me contacter" class="redButton ico email">CONTACTER</a></p>
                             <ul>
-                                <li class="ico"><time itemprop="birthDate" datetime="1985-05-15">15/05/1985</time></li>
-                                <li class="ico" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="streetAddress">Rue Hachtéhemel 42 <span class="li" >3000 Séhècesse</span ></span></li>
+                                <li class="ico"><time itemprop="birthDate" datetime="1985-05-15" class="bday">15/05/1985</time></li>
+                                <li class="ico adr" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="streetAddress"><span class="street-address">Rue Hachtéhemel 42 </span><span class="li locality" >3000 Séhècesse</span ></span></li>
 
                                 <li class="ico">
-                                    <a href="https://www.google.be/maps/place/HEPL+-+Haute+Ecole+de+la+Province+de+Li%C3%A8ge/@50.6283075,5.516929,13z/data=!4m8!1m2!2m1!1sinpress+hepl!3m4!1s0x47c0f913260c08e5:0x4f2ac72c2556af90!8m2!3d50.6108724!4d5.51011">Localiser le bien sur une carte</a>
+                                    <a title="aller sur google map pour me localiser" href="https://www.google.be/maps/place/HEPL+-+Haute+Ecole+de+la+Province+de+Li%C3%A8ge/@50.6283075,5.516929,13z/data=!4m8!1m2!2m1!1sinpress+hepl!3m4!1s0x47c0f913260c08e5:0x4f2ac72c2556af90!8m2!3d50.6108724!4d5.51011">Localiser moi sur une carte</a>
                                 </li>
                             </ul>
                             <ul>
                                 <li class="ico">Permis B</li>
-                                <li itemprop="telephone" class="ico">0498/12.34.56</li>
+                                <li itemprop="telephone" class="ico tel">+32 (0) 498 22 33 44</li>
                                 <li><a href="#" title="Performance énergétique du bien">PEB</a></li>
                             </ul>
                         </div> <!-- #contactMe -->
                         <aside id="advert">
-                            <h4 role="heading" aria-level="4">Proposé par l'agence&nbsp;:</h4>
+                            <h4 role="heading" aria-level="4">Proposé par l&rsquo;agence&nbsp;:</h4>
                             <p>ERA - Topimmo SA</p>
                             <p>
                                 <a href="#" title="visiter topimmo.be" id="topimmoLogo">Topimmo.be</a>
@@ -169,23 +145,23 @@
                                 <a href="#" title="visualiser leurs offres disponibles en vente">88 biens à vendre</a> disponibles et <a href="#" title="visualiser leurs offres disponibles en location">31 biens à louer.</a>
                             </p>
                             <ul>
-                                <li class="ico"><a href="#" title="afficher un formulaire de contact">Contacter l'agence</a></li>
-                                <li class="ico"><a href="#" title="lien vers leur page d'accueil">www.topimmo.be</a></li>
-                                <li class="ico"><a href="#" title="accéder à leurs coordonnées et leurs heures d'ouverture">Plus d'infos sur l'agence</a></li>
+                                <li class="ico"><a href="#" title="afficher un formulaire de contact">Contacter l&rsquo;agence</a></li>
+                                <li class="ico"><a href="#" title="lien vers leur page d&rsquo;accueil">www.topimmo.be</a></li>
+                                <li class="ico"><a href="#" title="accéder à leurs coordonnées et leurs heures d&rsquo;ouverture">Plus d&rsquo;infos sur l&rsquo;agence</a></li>
                             </ul>
                         </aside>
                     </div>
                     <ul id="tools">
-                        <li><a class="hidden" target="_blank" href="#" title="lancer l'impression de ce CV">Imprimer</a></li>
-                        <li><a class="hidden" target="_blank" href="https://www.facebook.com/EricClosquetBe" title="visiter ma page Facebook">Page Facebook</a></li>
-                        <li><a class="hidden" target="_blank" href="https://twitter.com/closqueteric" title="me suivre sur Twiter">Twiter</a></li>
-                        <li><a class="hidden" target="_blank" href="https://be.linkedin.com/in/eric-closquet-358047115" title="voir mon profil LinkedIn">LinkedIn</a></li>
+                        <li><a class="hidden" href="#" title="lancer l&rsquo;impression de ce CV">Imprimer</a></li>
+                        <li><a class="hidden" href="https://www.facebook.com/EricClosquetBe" title="visiter ma page Facebook">Page Facebook</a></li>
+                        <li><a class="hidden" href="https://twitter.com/closqueteric" title="me suivre sur Twiter">Twiter</a></li>
+                        <li><a class="hidden" href="https://be.linkedin.com/in/eric-closquet-358047115" title="voir mon profil LinkedIn">LinkedIn</a></li>
                     </ul>
                 </section><!-- #presentation -->
                 <section id="description" aria-labelledby="descriptionHeading">
                     <h3 id="descriptionHeading" role="heading" aria-level="2">Description</h3>
                     <p itemprop="description">
-                        Je suis diplômé en Web Développement, ce BAC+3 m'a permis de découvrir les technologies du web, j'ai acquis la connaissance nécessaire pour créer un site internet de A à Z. J'ai grand plaisir à travailler dans cet univers car il y a sans cesse des nouvelles technologies et on ne s'ennuie jamais.
+                        Je suis diplômé en Web Développement, ce BAC+3 m&rsquo;a permis de découvrir les technologies du web, j&rsquo;ai acquis la connaissance nécessaire pour créer un site internet de A à Z. J&rsquo;ai grand plaisir à travailler dans cet univers car il y a sans cesse des nouvelles technologies et on ne s&rsquo;ennuie jamais.
                     </p>
                     <section id="carac" aria-labelledby="caractheading">
                         <h4 id="caractheading" role="heading" aria-level="4" aria-hidden="true" class="hidden">Caractéristiques</h4>
@@ -193,15 +169,15 @@
                             <caption>Compétences</caption>
                             <tbody>
                                 <tr>
-                                    <th>Langages</th>
+                                    <th scope="row">Langages</th>
                                     <td>HTML5, CSS3, JS, PHP, MySQL, etc</td>
                                 </tr>
                                 <tr>
-                                    <th>Software</th>
+                                    <th scope="row">Software</th>
                                     <td>Photoshop, Illustrator, Maya(débutant)</td>
                                 </tr>
                                 <tr>
-                                    <th>Système</th>
+                                    <th scope="row">Système</th>
                                     <td>Windows, Mac, Linux</td>
                                 </tr>
                             </tbody>
@@ -222,12 +198,12 @@
                     </section> <!-- #caract -->
                 </section><!-- #description -->
                 <aside id="newsLetter" aria-labelledby="newsletterheading">
-                    <h2 id="newsletterheading" role="heading" aria-level="2">Inscrivez-vous à notre newsletter</h2>
+                    <h2 id="newsletterheading" role="heading" aria-level="2">Inscrivez-vous à ma newsletter</h2>
                     <p>et recevez chaque semaine des actus, des conseils et des découvertes immobilières.</p>
                     <form action="#" method="get" accept-charset="utf-8">
                         <label for="newsLetterInput" aria-hidden="true" class="hidden">Votre e-mail&nbsp;: </label>
                         <input type="email" name="newsLetter" id="newsLetterInput" value="" placeholder="Saisissez votre adresse e-mail">
-                        <button type="submit" name="submitButton" class="violetButton">Je m'inscris</button>
+                        <button type="submit" name="submitButton" class="violetButton">Je m&rsquo;inscris</button>
                     </form>
                 </aside> <!-- #newsLetter -->
             </article>
@@ -256,11 +232,11 @@
                         <li><a href="#" title="Afficher des infos relatives à la vie privée">Vie privée</a></li>
                         <li><a href="#" title="Afficher nos Conditions générales">Conditions générales</a></li>
                         <li><a href="#" title="Afficher les Annonces ">Annonces</a></li>
-                        <li><span>Une annonce frauduleuse&nbsp;? </span><a href="#" title="Afficher le guide afin d'éviter les arnaques">Lisez ceci.</a></li>
+                        <li><span>Une annonce frauduleuse&nbsp;? </span><a href="#" title="Afficher le guide afin d&rsquo;éviter les arnaques">Lisez ceci.</a></li>
                     </ul>
                     <ul>
                         <li>&copy; Vlan</li>
-                        <li>Version: 1.0.24.0</li>
+                        <li>Version&nbsp;: 1.0.24.0</li>
                     </ul>
                 </div> <!-- #noteBasDePage .content -->
             </div><!-- /wrapper -->
