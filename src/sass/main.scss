@@ -5,7 +5,7 @@ $defaultLinkColor: #1A7F0F;
 $defaultHoverLinkColor: #4e2780;
 $blocsBgColor: #fff;
 $defaultBtnHoverBgColor: #000;
-$contentHeading: #999;
+$contentHeading: #333333;
 $footerBgColor: #E1E1E1;
 
 //fonts import
@@ -289,8 +289,10 @@ article{
         margin-left: 2.0714285714285714285714285714286em;
         color: $contentHeading;
         font-weight: normal;
-        span:first-child{
+        span{
             color: $defaultBtnHoverBgColor;
+        }
+        span:first-child{
             padding-right: 1.0714285714285714285714285714286em; /* 15px/14px */
         }
     }
@@ -322,7 +324,7 @@ main section:first-of-type h3{
     color: $defaultBtnHoverBgColor;
 }
 .redButton{
-    background-color: #e61717;
+    background-color: darken(#e61717, 3%);
     text-transform: uppercase;
     height: 31px;
     line-height: 2.2142857142857142857142857142857em; /* 31px/14px */
