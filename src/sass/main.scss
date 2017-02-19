@@ -125,6 +125,7 @@ body{
 a{
     color: $defaultLinkColor;
     text-decoration: none;
+    hyphens: none;
     &:hover{
         color: $defaultHoverLinkColor;
     }
@@ -161,6 +162,10 @@ a{
         top: 7px;
         width: 20px;
     }
+}
+p{
+    word-wrap: break-word;
+    hyphens: auto;
 }
 
 /**********/
@@ -305,15 +310,6 @@ main section:first-of-type h3{
 #presentationheading{
     width: 100%;
 }
-.ie9 #slideshow, .ie9 #slideshow-js{
-    float: left;
-}
-.ie9 #slideshow, .ie9 #slideshow-js{
-    margin-top: 1.9285714285714285714285714285714em;
-}
-.ie9 #contactMe{
-    float: left;
-}
 #contactMe{
     width: 225px;
     margin: 0.71428571428571428571428571428571em 2.1428571428571428571428571428571em 0; /* 10px/14px 30px/14px */
@@ -337,9 +333,6 @@ main section:first-of-type h3{
     left: 10px;
     top: 7px;
     width: 13px;
-}
-.ie9 #advert{
-    float: left;
 }
 #advert{
     width: 204px;
@@ -471,9 +464,6 @@ main section:first-of-type h3{
 }
 
 /** description **/
-.ie9 #description{
-    float: left;
-}
 #description{
     margin-bottom: 1.428571428571429em; /* 20px/14px */
     width: 60.204081632653061224489795918367%; /* 590px/980px */
@@ -485,10 +475,8 @@ main section:first-of-type h3{
 }
 #description > p:first-of-type{
     margin-bottom: 1.285714285714286em; /* 18px/14px */
-    columns: 2;
-}
-.ie9 #description > p:first-of-type{
-    max-width: 30em;
+    columns: 2 20em;
+    column-gap: 1.5em;
 }
 #carac{
     padding-top: 1.285714285714286em; /* 18px/14px */
@@ -601,7 +589,7 @@ tr:last-of-type td, tr:last-of-type th {
 /**********/
 
 footer .wrapper{
-    padding: 3.571428571428571em 0.71428571428571428571428571428571em; /* 50px/14px 10px/14px */
+    padding: 3.571428571428571em 1em; /* 50px/14px 10px/14px */
 }
 footer{
     background-color: $footerBgColor;
@@ -643,7 +631,7 @@ footer li + li:before{
     text-align: center;
     text-decoration: none;
     text-shadow: 1px 1px 0 rgba(86, 73, 255, 0.3);
-    top: 45%;
+    top: 50%;
     width: 40px;
     z-index: 10;
     line-height: 150px;
@@ -694,13 +682,10 @@ footer li + li:before{
 .oFlow{
     position: relative;
     width: 390px;
-    height: 286px;
     overflow: hidden;
-    margin-bottom: 1.428571428571429em; /*  20px/14px */
 }
 .sContent{
     width: 300%;
-    position: absolute;
     transition: all .8s;
 }
 #slideshow li, #slideshow-js li{
@@ -809,9 +794,9 @@ footer li + li:before{
     header{
         padding: 2.1428571428571428571428571428571em 0 1.428571428571429em; /* 30px/14px 20px/14px */
     }
-    header > div{
-         padding-left: 0.71428571428571428571428571428571em; /* 10px/14px */
-         padding-right: 0.71428571428571428571428571428571em;
+    header > div, footer .wrapper{
+         padding-left: 2.0714285714285714285714285714286em; /* 10px/14px */
+         padding-right: 2.0714285714285714285714285714286em;
     }
     main{
         width: 100%;
@@ -822,8 +807,8 @@ footer li + li:before{
         width: 100%;
     }
     #refAnnonce li, #refAnnonce li:first-child{
-        margin-left: 0.71428571428571428571428571428571em; /* 10px/14px */
-        margin-right: 0.71428571428571428571428571428571em;
+        margin-left: 2.0714285714285714285714285714286em;
+        margin-right: 2.0714285714285714285714285714286em;
     }
     #presentation{
         width: 100%;
@@ -836,7 +821,10 @@ footer li + li:before{
         width: 100%;
     }
     .oFlow{
-        margin: 0 auto 1.428571428571429em; /* 20px/14px */
+        margin: 0 auto; /* 20px/14px */
+    }
+    .bulletNav{
+        margin-bottom: 2em;
     }
     #contactMe, #advert {
         width: 20%;
@@ -852,26 +840,35 @@ footer li + li:before{
     }
 }
 
-
-@media (max-width: 770px)
+@media (max-width: 850px)
 {
-    .sContent li{
-        width: 33.3333333333333%;
-    }
-    img{
-        width: 100%;
-        height: auto;
-    }
-    body{
-        background-image: none;
-    }
     header{
         display: block;
     }
     .right .dropDown{
         position: relative;
         top: -60px;
+    }
+}
+@media (max-width: 770px)
+{
+    .right .dropDown{
         left: -23px;
+    }
+    header > div, footer .wrapper{
+         padding-left: 1em;
+         padding-right: 1em;
+    }
+    #refAnnonce li, #refAnnonce li:first-child{
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    .sContent li{
+        width: 33.3333333333333%;
+    }
+    img{
+        width: 100%;
+        height: auto;
     }
     div.right{
         padding-right: 0;
@@ -886,8 +883,8 @@ footer li + li:before{
         margin: 0 auto 2.357142857142857em; /* 33px/14px */
     }
     #presentation > div, #description{
-        padding-left: 0.71428571428571428571428571428571em; /* 10px/14px */
-        padding-right: 0.71428571428571428571428571428571em; /* 10px/14px */
+        padding-left: 1em; /* 10px/14px */
+        padding-right: 1em; /* 10px/14px */
     }
 }
 
@@ -906,9 +903,16 @@ footer li + li:before{
 
 @media (max-width: 590px)
 {
+    .bulletNav{
+        margin-bottom: 0;
+    }
     #contactMe, #advert {
              margin-top: 1.785714285714286em; /* 25px/14px */
              width: 390px;
+    }
+    #contactMe{
+        margin-left: auto;
+        margin-right: auto;
     }
     #advert {
         border-left: none;
@@ -925,6 +929,16 @@ footer li + li:before{
     }
     #description > p:first-of-type{
         columns: 1;
+    }
+}
+@media (max-width: 435px)
+{
+    body{
+        background-image: none;
+    }
+    .right .dropDown{
+        top: -105px;
+        left: -22px;
     }
 }
 @media (max-width: 426px)
@@ -949,13 +963,6 @@ footer li + li:before{
     #slideshow:hover .prev, #slideshow-js:hover .prev{
         left: 2%;
     }
-    .prev, .next{
-        top: 37%;
-    }
-    .right .dropDown{
-        top: -109px;
-        left: -13px;
-    }
 }
 
 @media (max-width: 390px)
@@ -963,17 +970,26 @@ footer li + li:before{
     #refAnnonce li:first-child span:first-child{
         padding-right: 8.571428571428571em; /* 120px/14px*/
     }
-    .oFlow{
-        height: 275px;
-    }
 }
 
-@media (max-width: 320px)
+@media (max-width: 322px)
 {
     .right li + li a{
-        margin-left: 0.8571428571428571em; /* 12px/14px*/
+        margin-left: 0.1em;
     }
-    .oFlow{
-        height: 245px;
+}
+@media (max-width: 310px)
+{
+    #refAnnonce li:first-child span:first-child{
+        padding-right: 7.671em; /* 120px/14px*/
+    }
+}
+@media (max-width: 297px)
+{
+    div.right{
+        padding-left: 1.5%;
+    }
+    #refAnnonce li:first-child span:first-child{
+        padding-right: 5.671em; /* 120px/14px*/
     }
 }
