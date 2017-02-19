@@ -112,6 +112,7 @@ body{
     color: $defaultTextColor;
     display: flex;
     flex-direction: column;
+    height: 100vh;
 }
 .content{
     width: 980px; /*980px*/
@@ -228,23 +229,6 @@ header{
         margin-left: 1.1428571428571428571428571428571em; /* 16px/14px */
     }
 }
-
-
-.ie9{
-    .left{
-        float: left;
-    }
-    .right{
-        ul, a.dropDown{
-            float: right;
-            ul{
-                clear: right;
-            }
-        }
-    }
-}
-
-
 .right ul li:first-child a{
     text-indent: -9999px;
     width: 11px;
@@ -424,17 +408,10 @@ main section:first-of-type h3{
     background-size: 100%;
     margin: 0.71428571428571428571428571428571em 0; /* 10px/14px */
 }
-.ie9 #tools{
-    clear: both;
-}
 #tools{
     background-color: transparent;
     margin: 0 0 2.357142857142857em 2.285714285714286em; /* 33px/14px 32px/14px */
     width: 130px;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
     justify-content: space-between;
 }
@@ -580,10 +557,6 @@ tr:last-of-type td, tr:last-of-type th {
     right: 9px;
     top: 10px;
 }
-
-.ie9 #newsLetter{
-    clear: both;
-}
 /**********/
 /* footer */
 /**********/
@@ -592,6 +565,7 @@ footer .wrapper{
     padding: 3.571428571428571em 1em; /* 50px/14px 10px/14px */
 }
 footer{
+    flex-grow: 1;
     background-color: $footerBgColor;
 }
 footer h2{
